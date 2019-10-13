@@ -11433,6 +11433,42 @@ video {
   border-radius: 0.125rem;
 }
 
+.breadcrumbs {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 0.75rem;
+}
+
+.breadcrumbs a:not(.active) {
+  border-bottom: 1px dashed #AAA;
+  color: #718096;
+}
+
+.breadcrumbs a {
+  margin-right: 3px;
+  padding-bottom: 2px;
+}
+
+.breadcrumbs svg {
+  color: #a0aec0;
+  margin-right: 3px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.page-title {
+  text-transform: uppercase;
+  color: #2d3748;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 .btn-primary {
   background-color: #3182ce;
   color: #ebf8ff;
