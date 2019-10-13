@@ -18,11 +18,17 @@
         "laravel-mix-purgecss": "^4.1",
         "laravel-mix-tailwind": "^0.1.0",
         "lodash": "^4.17.13",
+        "node-snackbar": "^0.1.15",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "tailwindcss": "^1.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.4"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/vue-fontawesome": "^0.1.7"
     }
 }
