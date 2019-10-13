@@ -18,9 +18,9 @@
             @include('layouts.sidebar')
         @endauth
 
-        <nav class="bg-blue-900 shadow mb-8 py-6">
-            <div class="container mx-auto px-6 md:px-0">
-                <div class="flex items-center justify-center">
+        <nav class="bg-blue-900 shadow mb-8 py-4">
+            <div class="px-3">
+                <div class="flex items-center">
                     <div class="mr-6">
                         <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                             {{ config('app.name', 'Laravel') }}
