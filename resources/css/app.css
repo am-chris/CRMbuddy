@@ -60,3 +60,31 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.btn {
+    @apply .p-2 .text-sm .uppercase .font-semibold .rounded-sm;
+}
+
+.btn-primary {
+    @apply .bg-blue-600 .text-blue-100;
+}
+
+.card {
+    @apply .bg-white .shadow;
+}
+
+ .form-group {
+     @apply .mb-5;
+ }
+
+.form-group label {
+    @apply .text-gray-800 .uppercase .font-semibold .mb-1 .text-xs .block;
+}
+
+.form-group .required {
+    @apply .text-red-600;
+}
+
+ .form-control {
+    @apply .border .text-sm .block .p-2 .w-full .rounded;
+ }

@@ -18,7 +18,7 @@
             @include('layouts.sidebar')
         @endauth
 
-        <nav class="bg-blue-900 shadow mb-8 py-4">
+        <nav class="bg-blue-900 shadow py-4 fixed top-0 right-0 left-0 ">
             <div class="px-3">
                 <div class="flex items-center">
                     <div class="mr-6">
@@ -48,7 +48,9 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="pl-64 pt-20 pr-8">
+            @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->
