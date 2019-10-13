@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="mb-4">Clients &sdot; Index</h1>
+<div class="page-header">
+    <h1 class="page-title">Client Index</h1>
+    <div class="breadcrumbs">
+        <a href="{{ route('clients.index') }}" class="active">Client Index</a> 
+    </div>
+</div>
+
 <table class="table-auto w-full bg-white shadow">
     <thead>
         <th class="py-3 px-3 text-gray-600 uppercase text-sm text-left">Name</th>

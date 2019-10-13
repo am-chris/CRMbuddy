@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="page-header">
+    <h1 class="page-title">Create Client</h1>
+    <div class="breadcrumbs">
+        <a href="{{ route('clients.index') }}">Client Index</a> 
+        <font-awesome-icon :icon="['fas', 'chevron-right']"></font-awesome-icon> 
+        <a href="{{ route('clients.create') }}" class="active">Create</a>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-body p-4">
         <form action="{{ route('clients.store') }}" method="POST">

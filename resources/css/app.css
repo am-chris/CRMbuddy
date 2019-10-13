@@ -65,6 +65,33 @@
     @apply .p-2 .text-sm .uppercase .font-semibold .rounded-sm;
 }
 
+.breadcrumbs {
+    @apply .uppercase .font-bold .text-gray-800 .text-xs;
+}
+
+.breadcrumbs a:not(.active) {
+    border-bottom: 1px dashed #AAA;
+    @apply .text-gray-600;
+}
+
+.breadcrumbs a {
+    margin-right: 3px;
+    padding-bottom: 2px;
+}
+
+.breadcrumbs svg {
+    @apply .text-gray-500;
+    margin-right: 3px;
+}
+
+.page-header {
+    @apply .flex .justify-between .mb-5 .items-center;
+}
+
+.page-title {
+    @apply .uppercase .text-gray-800 .text-lg .font-bold;
+}
+
 .btn-primary {
     @apply .bg-blue-600 .text-blue-100;
 }
