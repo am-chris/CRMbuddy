@@ -66,7 +66,7 @@
 }
 
 .breadcrumbs {
-    @apply .uppercase .font-bold .text-gray-800 .text-xs;
+    @apply .uppercase .font-bold .text-gray-700 .text-xs;
 }
 
 .breadcrumbs a:not(.active) {
@@ -85,11 +85,11 @@
 }
 
 .page-header {
-    @apply .flex .justify-between .mb-5 .items-center;
+    @apply .flex .justify-start .mb-5 .items-center;
 }
 
 .page-title {
-    @apply .uppercase .text-gray-800 .text-lg .font-bold;
+    @apply .uppercase .text-gray-800 .text-lg .font-bold .mr-5;
 }
 
 .btn-primary {
@@ -115,3 +115,13 @@
  .form-control {
     @apply .border .text-sm .block .p-2 .w-full .rounded;
  }
+
+.fade-enter-active {
+    transition: opacity .33s;
+}
+.fade-leave-active {
+    transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}

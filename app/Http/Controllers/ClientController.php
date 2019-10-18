@@ -48,9 +48,9 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Client $client)
     {
-        //
+        return $client;
     }
 
     /**
@@ -71,9 +71,11 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Client $client)
     {
-        //
+        $client->update($request->all());
+
+        return redirect()->route('clients.index');
     }
 
     /**
@@ -82,8 +84,8 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Client $client)
     {
-        //
+        $client->delete();
     }
 }
