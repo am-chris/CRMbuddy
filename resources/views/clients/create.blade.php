@@ -22,12 +22,12 @@
 
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="text" name="email" class="form-control" required>
+                <input type="text" name="email" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="">Phone</label>
-                <input type="text" name="phone" class="form-control" required>
+                <input type="text" name="phone" class="form-control">
             </div>
 
             <div class="form-group">

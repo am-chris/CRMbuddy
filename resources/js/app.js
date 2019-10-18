@@ -17,6 +17,15 @@ Vue.config.productionTip = false
 import ClientsModal from './components/ClientsModal.vue';
 Vue.component('clients-modal', ClientsModal);
 
+import DropdownMenu from './components/DropdownMenu.vue';
+Vue.component('dropdown-menu', DropdownMenu);
+
+import Modal from './components/Modal.vue';
+Vue.component('modal', Modal);
+
+import Client from './components/Client.vue';
+Vue.component('client', Client);
+
 /* eslint-disable no-new */
 const app = new Vue({
     el: '#app',

@@ -48,9 +48,11 @@
             </div>
         </nav>
 
-        <div class="pl-64 pt-20 pr-8">
+        <div class="pt-20 @auth pl-64 pr-8 @endauth">
             @yield('content')
         </div>
+        
+        <modal></modal>
     </div>
 
     <!-- Scripts -->

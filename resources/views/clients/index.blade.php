@@ -13,6 +13,7 @@
         <th class="py-3 px-3 text-gray-600 uppercase text-sm text-left">Name</th>
         <th class="py-3 px-3 text-gray-600 uppercase text-sm text-left">Email</th>
         <th class="py-3 px-3 text-gray-600 uppercase text-sm text-left">Phone</th>
+        <th class="py-3 px-3 w-12"></th>
     </thead>
     <tbody>
         @foreach ($clients as $client)
@@ -25,6 +26,15 @@
                 </td>
                 <td class="py-3 text-sm px-3">
                     {{ $client->phone }}
+                </td>
+                <td class="w-12 px-3">
+                    <dropdown-menu
+                        :items="[
+                            { text: 'View', eventName: 'modal', eventPayload: { modalTitle: 'Viewing Client', id: {{ $client->id }}, component: 'Client', method: 'show', url: {{ json_encode(route('clients.show', $client->id)) }} } }, 
+                            { text: 'Edit', eventName: 'modal', eventPayload: { modalTitle: 'Editing Client', id: {{ $client->id }}, component: 'Client', method: 'edit', url: {{ json_encode(route('clients.update', $client->id)) }} } }, 
+                            { text: 'Delete', eventName: 'modal', eventPayload: { modalTitle: 'Delete Client', id: {{ $client->id }}, component: 'Client', method: 'destroy', url: {{ json_encode(route('clients.destroy', $client->id)) }} } }
+                        ]"
+                    ></dropdown-menu>
                 </td>
             </tr>
         @endforeach
