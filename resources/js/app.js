@@ -26,6 +26,9 @@ Vue.component('modal', Modal);
 import Client from './components/Client.vue';
 Vue.component('client', Client);
 
+import CButton from './components/CButton.vue';
+Vue.component('cbutton', CButton);
+
 /* eslint-disable no-new */
 const app = new Vue({
     el: '#app',
