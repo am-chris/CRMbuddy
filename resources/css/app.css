@@ -62,7 +62,7 @@
  */
 
 .btn {
-    @apply .p-2 .text-sm .uppercase .font-semibold .rounded-sm;
+    @apply .p-2 .text-sm .uppercase .font-semibold;
 }
 
 .breadcrumbs {
@@ -93,7 +93,7 @@
 }
 
 .btn-primary {
-    @apply .bg-blue-600 .text-blue-100;
+    @apply .bg-gray-800 .text-gray-100;
 }
 
 .card {
@@ -113,7 +113,7 @@
 }
 
  .form-control {
-    @apply .border .text-sm .block .p-2 .w-full .rounded;
+    @apply .border .border-gray-400 .text-sm .block .p-2 .w-full .rounded;
  }
 
 .fade-enter-active {
@@ -124,4 +124,8 @@
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
+}
+
+.modal .form-group {
+    @apply .mb-3;
 }

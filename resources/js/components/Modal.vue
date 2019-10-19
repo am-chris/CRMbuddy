@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div class="fixed top-0 bottom-0 right-0 left-0 z-40 overflow-auto flex" style="background-color: rgba(9, 18, 43, 0.6)" v-if="modal.visible">
-            <div class="relative bg-white w-full mt-16 max-w-xl m-auto flex-col flex rounded z-50 shadow-xl">
+            <div class="relative bg-white w-full mt-16 max-w-xl m-auto flex-col flex rounded z-50 shadow-xl modal">
                 <div class="p-4 rounded-tr rounded-tl" :class="modal.method == 'destroy' ? 'bg-red-200 text-red-800' : 'border-b bg-gray-200 text-gray-700'">
                     <h1 class="font-bold uppercase">
                         {{ modal.title }}

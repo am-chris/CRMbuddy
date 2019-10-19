@@ -2,6 +2,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import route from 'ziggy';
+import { Ziggy } from './ziggy';
+
 import 'node-snackbar/dist/snackbar.min.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -28,6 +31,13 @@ Vue.component('client', Client);
 
 import CButton from './components/CButton.vue';
 Vue.component('cbutton', CButton);
+
+
+Vue.mixin({
+    methods: {
+        route: (name, params, absolute) => route(name, params, absolute, Ziggy),
+    }
+});
 
 /* eslint-disable no-new */
 const app = new Vue({

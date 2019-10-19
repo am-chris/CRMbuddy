@@ -2,6 +2,7 @@ const mix = require('laravel-mix');
 
 require('laravel-mix-tailwind');
 require('laravel-mix-purgecss');
+const path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -20,6 +21,13 @@ mix.js('resources/js/app.js', 'public/js')
    .browserSync({
       proxy: 'http://crmbuddy.test',
       notify: false,
+   })
+   .webpackConfig({
+      resolve: {
+         alias: {
+            ziggy: path.resolve('vendor/tightenco/ziggy/src/js/route.js'),
+         },
+      },
    });
 
 if (mix.inProduction()) {
